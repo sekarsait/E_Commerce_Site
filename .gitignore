@@ -1,6 +1,19 @@
-/uploads/
-/system/
-/.vscode/
-/.env
+
 /node_modules/
 /writable/
+
+# System & framework
+/system/
+
+# Uploads (user files)
+/uploads/
+
+# Environment
+/.env
+
+# IDE
+/.vscode/
+
+# Logs & cache
+/application/cache/
+/application/logs/
