@@ -1,0 +1,217 @@
+/* ============================================================
+   SELLOLLA PREMIUM — PATCH v1.1
+   Upload to: public_html/shop/assets/css/sellolla-patch.css
+
+   ADD THIS LINE in _header.php AFTER the sellolla-premium.css line:
+   <link rel="stylesheet" href="<?= base_url(); ?>assets/css/sellolla-patch.css"/>
+   ============================================================ */
+
+/* ── Compact Announcement Bar ─────────────────────── */
+.sellolla-announce {
+  padding: 5px 0 !important;
+  font-size: 11.5px !important;
+}
+.sellolla-announce-inner { gap: 48px !important; }
+.sellolla-announce-inner span { gap: 5px !important; font-size: 11.5px !important; }
+
+/* ── Compact Trust Strip ──────────────────────────── */
+.sellolla-trust-strip { padding: 7px 0 !important; }
+.trust-badge {
+  padding: 5px 18px !important;
+  gap: 7px !important;
+  min-width: 120px !important;
+}
+.trust-badge .tb-icon {
+  width: 26px !important;
+  height: 26px !important;
+  font-size: 13px !important;
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+}
+.trust-badge .tb-text strong {
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+}
+.trust-badge .tb-text span {
+  font-size: 10.5px !important;
+}
+
+/* ── Compact Top Bar ──────────────────────────────── */
+.top-bar { padding: 5px 0 !important; }
+.top-bar .nav-link {
+  font-size: 12px !important;
+  padding: 3px 8px !important;
+}
+
+/* ── Compact Main Nav & Search ────────────────────── */
+.nav-main .navbar .navbar-nav .nav-item > .nav-link {
+  font-size: 13px !important;
+  padding: 10px 12px !important;
+}
+
+/* Search bar tighter */
+.top-search-bar input,
+.search-bar-container input {
+  padding: 8px 14px !important;
+  font-size: 13.5px !important;
+}
+.top-search-bar .btn-search,
+.btn-search {
+  padding: 8px 16px !important;
+  font-size: 14px !important;
+}
+
+/* Sell Now button smaller */
+.btn-sell-now {
+  padding: 6px 16px !important;
+  font-size: 12.5px !important;
+}
+
+/* ── PAYMENT ICONS FIX ────────────────────────────── */
+/* Fix blank SVG images on dark footer background.
+   The SVGs have light fills — invert them to show on dark. */
+
+/* Footer-top payment section (the "WE ACCEPT" area) */
+.footer-payment-icons img,
+.footer-widget .footer-payment-icons img {
+  height: 22px !important;
+  width: auto !important;
+  filter: brightness(0) invert(1) !important;
+  opacity: 0.75 !important;
+  transition: opacity .2s !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  max-width: 50px !important;
+}
+.footer-payment-icons img:hover { opacity: 1 !important; }
+
+/* Footer-bottom payment icons */
+.footer-bottom .footer-payment-icons img {
+  height: 20px !important;
+  filter: brightness(0) invert(1) !important;
+  opacity: 0.6 !important;
+}
+
+/* Hide broken/blank img boxes — show only when src loaded */
+.footer-payment-icons img[src*="base64"] {
+  display: none !important;
+}
+
+/* Payment text badges styling */
+.pay-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: rgba(255,255,255,.1) !important;
+  color: rgba(255,255,255,.8) !important;
+  border: 1px solid rgba(255,255,255,.15) !important;
+  border-radius: 4px !important;
+  padding: 2px 8px !important;
+  font-size: 10.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: .3px !important;
+}
+
+/* ── Product Card ─────────────────────────────────── */
+.product-title {
+  font-size: 12.5px !important;
+  line-height: 1.4 !important;
+  -webkit-line-clamp: 2 !important;
+}
+.lbl-price { font-size: 15px !important; }
+.item-details { padding: 10px 12px 12px !important; }
+.product-item-rating { margin-bottom: 6px !important; }
+
+/* ── Section Titles Compact ───────────────────────── */
+.section .title, h3.title, .section-title {
+  font-size: 18px !important;
+}
+.section { padding: 20px !important; margin-bottom: 16px !important; }
+
+/* ── Footer Compact ───────────────────────────────── */
+.footer-top { padding: 40px 0 28px !important; }
+.footer-title { font-size: 12px !important; margin-bottom: 12px !important; }
+.nav-footer ul li { margin-bottom: 7px !important; }
+.nav-footer ul li a { font-size: 12.5px !important; }
+.footer-about { font-size: 12.5px !important; }
+
+/* ── Fix double copyright row ─────────────────────── */
+/* Hide Modesy's original copyright if our footer-compliance shows */
+.footer-bottom .container {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+}
+
+/* ── Mobile: ensure site works on all devices ─────── */
+@media (max-width: 767px) {
+  .sellolla-trust-strip { overflow-x: auto !important; }
+  .sellolla-trust-strip .container {
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    padding-bottom: 4px !important;
+    scrollbar-width: none !important;
+  }
+  .sellolla-trust-strip .container::-webkit-scrollbar { display: none !important; }
+  .trust-badge { flex-shrink: 0 !important; min-width: 130px !important; border-right: none !important; }
+  .trust-badge:not(:last-child) { border-right: 1px solid var(--gray-200) !important; }
+  .sellolla-announce-inner { animation-duration: 20s !important; }
+}
+
+/* ── Pagination compact ───────────────────────────── */
+.pagination .page-item .page-link {
+  padding: 5px 10px !important;
+  font-size: 12.5px !important;
+}
+
+/* ── Breadcrumb ───────────────────────────────────── */
+.breadcrumb {
+  background: transparent !important;
+  padding: 8px 0 !important;
+  font-size: 12.5px !important;
+}
+.breadcrumb-item a { color: var(--gray-500) !important; }
+.breadcrumb-item.active { color: var(--gray-700) !important; }
+.breadcrumb-item + .breadcrumb-item::before { color: var(--gray-400) !important; }
+
+/* ── Tabs on product page ─────────────────────────── */
+.nav-tabs .nav-link {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  padding: 8px 16px !important;
+}
+.nav-tabs .nav-link.active {
+  color: var(--orange) !important;
+  border-bottom-color: var(--orange) !important;
+}
+
+/* ── Dashboard stats ──────────────────────────────── */
+.dashboard-stats-card {
+  border-radius: var(--radius-lg) !important;
+  border: 1.5px solid var(--gray-200) !important;
+  background: var(--white) !important;
+  padding: 18px 20px !important;
+}
+
+/* ── Fix modal z-index ────────────────────────────── */
+.modal { z-index: 1050 !important; }
+.modal-backdrop { z-index: 1040 !important; }
+
+/* ── Footer Links — Compact Spacing ──────────────────── */
+.nav-footer ul li {
+  margin-bottom: 4px !important;
+  line-height: 1.4 !important;
+}
+.nav-footer ul li a {
+  font-size: 12.5px !important;
+  padding: 2px 0 !important;
+  display: inline-flex !important;
+}
+.footer-widget {
+  margin-bottom: 10px !important;
+}
+.footer-top {
+  padding: 32px 0 20px !important;
+}

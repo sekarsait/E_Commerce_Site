@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grievance Officer — Sellolla</title>
+<meta name="description" content="Sellolla Grievance Officer details. File a consumer complaint as per Consumer Protection E-Commerce Rules 2020.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:#F9FAFB;color:#374151;line-height:1.7;font-size:15px}
+a{color:#F97316;text-decoration:none}
+a:hover{color:#EA6C0A;text-decoration:underline}
+.site-header{background:#0A1628;padding:14px 0}
+.site-header .inner{max-width:900px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between}
+.site-header .logo{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:800;color:#fff;text-decoration:none}
+.site-header .logo span{color:#F97316}
+.site-header .back-link{font-size:13px;color:rgba(255,255,255,.7);text-decoration:none}
+.site-header .back-link:hover{color:#fff}
+.breadcrumb-bar{background:#fff;border-bottom:1px solid #E5E7EB;padding:10px 0}
+.breadcrumb-bar .inner{max-width:900px;margin:0 auto;padding:0 20px;font-size:12.5px;color:#9CA3AF}
+.breadcrumb-bar a{color:#6B7280;text-decoration:none}
+.breadcrumb-bar span{margin:0 6px;color:#D1D5DB}
+.page-wrap{max-width:900px;margin:32px auto;padding:0 20px 60px}
+.page-card{background:#fff;border-radius:16px;border:1.5px solid #E5E7EB;padding:48px 52px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:32px;font-weight:800;color:#0A1628;margin-bottom:6px}
+.meta{font-size:12.5px;color:#9CA3AF;border-bottom:1px solid #F3F4F6;padding-bottom:18px;margin-bottom:28px}
+h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:700;color:#0A1628;margin:32px 0 10px;padding-left:12px;border-left:3px solid #F97316}
+p{margin-bottom:14px;color:#374151;line-height:1.8}
+ul,ol{padding-left:22px;margin-bottom:16px}
+li{margin-bottom:7px;line-height:1.7}
+strong{color:#111827;font-weight:600}
+.info-box{border-radius:10px;padding:16px 20px;margin:20px 0}
+.info-box.green{background:#F0FDF4;border:1.5px solid #BBF7D0}
+.info-box.blue{background:#EFF6FF;border:1.5px solid #BFDBFE}
+.info-box.orange{background:#FFF7ED;border:1.5px solid #FED7AA}
+.info-box p{margin:0;font-size:13.5px}
+
+/* Officer card - prominent green */
+.officer-card{background:linear-gradient(135deg,#0A1628 0%,#152238 100%);border-radius:16px;padding:32px 36px;margin:24px 0;color:#fff}
+.officer-card .oc-label{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:16px}
+.officer-card .oc-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:24px;font-weight:800;color:#fff;margin-bottom:4px}
+.officer-card .oc-title{font-size:13.5px;color:#F97316;font-weight:600;margin-bottom:20px}
+.officer-card .oc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.officer-card .oc-item{}
+.officer-card .oc-item .oci-label{font-size:11px;font-weight:700;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.6px;margin-bottom:3px}
+.officer-card .oc-item .oci-value{font-size:14px;color:rgba(255,255,255,.9)}
+.officer-card .oc-item a{color:#F97316}
+.officer-card .oc-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(22,163,74,.2);border:1px solid rgba(22,163,74,.4);border-radius:50px;padding:5px 14px;margin-top:20px;font-size:12.5px;color:#4ADE80;font-weight:600}
+
+/* Steps */
+.steps{margin:16px 0}
+.step-item{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #F3F4F6}
+.step-item:last-child{border-bottom:none}
+.step-num{width:32px;height:32px;border-radius:50%;background:#F97316;color:#fff;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Plus Jakarta Sans',sans-serif}
+.step-content strong{display:block;font-size:14px;font-weight:700;color:#0A1628;margin-bottom:3px}
+.step-content span{font-size:13.5px;color:#6B7280}
+
+/* Escalation grid */
+.escalation-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin:16px 0}
+.esc-item{background:#F9FAFB;border:1.5px solid #E5E7EB;border-radius:12px;padding:18px 20px}
+.esc-item .esc-icon{font-size:24px;margin-bottom:10px}
+.esc-item strong{display:block;font-size:14px;font-weight:700;color:#0A1628;font-family:'Plus Jakarta Sans',sans-serif;margin-bottom:4px}
+.esc-item p{font-size:13px;color:#6B7280;margin:0}
+.esc-item a{color:#F97316;font-weight:600}
+
+.page-footer{background:#0A1628;padding:20px;text-align:center;margin-top:60px}
+.page-footer p{font-size:12px;color:rgba(255,255,255,.4)}
+.page-footer a{color:rgba(255,255,255,.6)}
+@media(max-width:640px){.page-card{padding:28px 20px}h1{font-size:24px}.officer-card{padding:24px 20px}.officer-card .oc-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a href="/" class="logo">Sell<span>olla</span></a>
+    <a href="/" class="back-link">← Back to Shop</a>
+  </div>
+</header>
+
+<div class="breadcrumb-bar">
+  <div class="inner">
+    <a href="/">Home</a><span>›</span>Grievance Officer
+  </div>
+</div>
+
+<div class="page-wrap">
+  <div class="page-card">
+
+    <h1>Grievance Officer</h1>
+    <p class="meta">As mandated by the Consumer Protection (E-Commerce) Rules, 2020 — Rule 4(4)(vi) and Rule 6(8)</p>
+
+    <div class="info-box green">
+      <p><strong>Your consumer rights matter.</strong> We are legally required to appoint a Grievance Officer to address complaints within 48 hours and resolve them within 30 days. If we fall short, you have the right to escalate to national consumer authorities.</p>
+    </div>
+
+    <p>Under the <strong>Consumer Protection (E-Commerce) Rules, 2020</strong>, every e-commerce entity operating in India must designate a Grievance Officer. The details of Sellolla's Grievance Officer are provided below.</p>
+
+    <!-- Officer card -->
+    <div class="officer-card">
+      <div class="oc-label">Designated Grievance Officer</div>
+      <div class="oc-name">[Full Name of Officer]</div>
+      <div class="oc-title">Grievance Officer — Sellolla</div>
+      <div class="oc-grid">
+        <div class="oc-item">
+          <div class="oci-label">Email</div>
+          <div class="oci-value"><a href="mailto:grievance@sellolla.in">grievance@sellolla.in</a></div>
+        </div>
+        <div class="oc-item">
+          <div class="oci-label">Phone</div>
+          <div class="oci-value">[Phone Number]</div>
+        </div>
+        <div class="oc-item">
+          <div class="oci-label">Working Hours</div>
+          <div class="oci-value">Mon – Sat, 9:00 AM – 6:00 PM IST</div>
+        </div>
+        <div class="oc-item">
+          <div class="oci-label">Registered Address</div>
+          <div class="oci-value">[Full Business Address]<br>[City, State, PIN Code]</div>
+        </div>
+      </div>
+      <div class="oc-badge">
+        ✅ Acknowledges within 48 hours &nbsp;·&nbsp; Resolves within 30 days
+      </div>
+    </div>
+
+    <h2>What Issues Can the Grievance Officer Handle?</h2>
+    <ul>
+      <li>Disputes about orders, refunds, or returns that were not resolved by our support team</li>
+      <li>Complaints about seller conduct or fraudulent listings</li>
+      <li>Privacy concerns or data protection requests</li>
+      <li>Issues with payment deductions without order fulfillment</li>
+      <li>Complaints about misleading product descriptions</li>
+      <li>Any consumer complaint under the Consumer Protection Act, 2019</li>
+    </ul>
+
+    <h2>How to File a Grievance</h2>
+    <div class="steps">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <strong>Try Customer Support First</strong>
+          <span>Email <a href="mailto:support@sellolla.in">support@sellolla.in</a> or use the contact form. Most issues are resolved here within 24–48 hours.</span>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <strong>Email the Grievance Officer</strong>
+          <span>If not resolved, email <a href="mailto:grievance@sellolla.in">grievance@sellolla.in</a> with subject: <strong>"Consumer Grievance – [Your Order Number]"</strong></span>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <strong>Include These Details</strong>
+          <span>Your full name · Order number · Contact number · Date of purchase · Description of the issue · Supporting photos or screenshots</span>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <strong>Receive Acknowledgement</strong>
+          <span>We will acknowledge your grievance within <strong>48 hours</strong> with a complaint reference number.</span>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <strong>Resolution</strong>
+          <span>Your complaint will be investigated and resolved within <strong>30 days</strong> of receipt.</span>
+        </div>
+      </div>
+    </div>
+
+    <h2>Further Escalation</h2>
+    <p>If you are not satisfied with our resolution, you have the right to escalate to the following government authorities — completely free of charge:</p>
+
+    <div class="escalation-grid">
+      <div class="esc-item">
+        <div class="esc-icon">📞</div>
+        <strong>National Consumer Helpline</strong>
+        <p>Call <a href="tel:1915">1915</a> (Toll Free)<br>Available in multiple languages</p>
+      </div>
+      <div class="esc-item">
+        <div class="esc-icon">🖥️</div>
+        <strong>E-Daakhil Portal</strong>
+        <p>File online consumer complaints at <a href="https://edaakhil.nic.in" target="_blank">edaakhil.nic.in</a></p>
+      </div>
+      <div class="esc-item">
+        <div class="esc-icon">🏛️</div>
+        <strong>Consumer Forum</strong>
+        <p>File at your District Consumer Disputes Redressal Commission (DCDRC)</p>
+      </div>
+      <div class="esc-item">
+        <div class="esc-icon">🌐</div>
+        <strong>Consumer Affairs Ministry</strong>
+        <p>Visit <a href="https://consumeraffairs.nic.in" target="_blank">consumeraffairs.nic.in</a> for guidance and resources</p>
+      </div>
+    </div>
+
+    <div class="info-box blue">
+      <p><strong>📋 Legal Basis:</strong> This page is maintained in compliance with the <em>Consumer Protection (E-Commerce) Rules, 2020</em>, the <em>Consumer Protection Act, 2019</em>, and the <em>Information Technology Act, 2000</em>. Failure to resolve grievances within 30 days may result in regulatory action.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer class="page-footer">
+  <p>&copy; 2025 Sellolla. All rights reserved. &nbsp;|&nbsp; <a href="/return-policy.html">Return Policy</a> &nbsp;|&nbsp; <a href="/privacy-policy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="/shipping-policy.html">Shipping Policy</a></p>
+</footer>
+
+</body>
+</html>

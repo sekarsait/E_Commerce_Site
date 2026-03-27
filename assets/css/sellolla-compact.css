@@ -1,0 +1,73 @@
+/* ============================================================
+   sellolla-compact.css  v2
+   Upload: public_html/shop/assets/css/sellolla-compact.css
+   Link in _header.php AFTER custom_css_codes line
+   ============================================================ */
+
+/* ── Hide Modesy's original nav-top row (logo+search+cart)
+      because our new _top_bar.php #sl-header replaces it ── */
+.nav-top { display: none !important; }
+
+/* ── Make only the .main-menu (category nav) show ──────── */
+.main-menu { box-shadow: none !important; }
+.nav-main {
+  background: #fff !important;
+  border-bottom: 1px solid #E5E7EB !important;
+}
+.nav-main .navbar { padding: 0 !important; }
+.nav-main .container { max-width: 1240px !important; padding: 0 16px !important; }
+.nav-main .navbar .navbar-nav .nav-item > .nav-link {
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  padding: 9px 12px !important;
+  color: #0A1628 !important;
+  font-family: 'DM Sans','Segoe UI',sans-serif !important;
+}
+.nav-main .navbar .navbar-nav .nav-item > .nav-link:hover { color: #F97316 !important; }
+.nav-main .navbar > .navbar-nav > .nav-item:hover .nav-link:before,
+.nav-main .navbar .navbar-nav .nav-item:hover .nav-link:before {
+  background-color: #F97316 !important;
+  height: 2px !important;
+}
+
+/* ── Make the sticky header work with Modesy's <header> ── */
+#header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 999 !important;
+  background: #fff !important;
+}
+/* The announcement + trust strip scroll away,
+   only #sl-header (which is sticky inside _top_bar.php) stays */
+
+/* ── Dropdown menus on main nav ── */
+.nav-main .dropdown-menu {
+  border: none !important;
+  border-radius: 10px !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,.1) !important;
+  border-top: 2px solid #F97316 !important;
+  padding: 12px !important;
+}
+
+/* ── Footer links compact ── */
+.nav-footer ul li { margin-bottom: 4px !important; line-height: 1.35 !important; }
+.nav-footer ul li a { font-size: 12px !important; padding: 1px 0 !important; }
+.footer-top { padding: 32px 0 20px !important; }
+.footer-widget { margin-bottom: 20px !important; }
+.footer-title { margin-bottom: 10px !important; font-size: 11.5px !important; }
+
+/* ── Product cards ── */
+.product-title { font-size: 12.5px !important; line-height: 1.35 !important; }
+.item-details { padding: 9px 11px 11px !important; }
+.lbl-price { font-size: 14.5px !important; }
+.product-item { border-radius: 10px !important; }
+.section .title, h3.title { font-size: 17px !important; }
+.section { padding: 18px !important; margin-bottom: 14px !important; }
+
+/* ── Mobile: Modesy's mobile nav still works ── */
+@media (max-width: 767px) {
+  /* Keep Modesy's mobile-nav-container visible */
+  .mobile-nav-container { display: block !important; }
+  /* Trust strip scrolls */
+  #sl-trust { overflow-x: auto !important; }
+}
