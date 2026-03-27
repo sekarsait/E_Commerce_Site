@@ -1,0 +1,6 @@
+/uploads/
+/system/
+/.vscode/
+/.env
+/node_modules/
+/writable/
